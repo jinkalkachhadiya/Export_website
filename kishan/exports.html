@@ -1,0 +1,470 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    </head>
+        <style>
+            .navbar 
+            {
+                margin-bottom: 0;
+                background-color: rgb(180, 178, 178);
+                z-index: 9999;
+                border: 0;
+                font-size: 12px !important;
+                line-height: 1.42857143 !important;
+                letter-spacing: 4px;
+                border-radius: 0;
+                font-family: Montserrat, sans-serif;
+            }
+            .navbar li a, .navbar  
+            {
+                color: #fff !important;
+            }
+            .navbar-nav li a:hover, .navbar-nav li.active a 
+            {
+                color: black !important;
+                background-color: #fff !important;
+                height: 100px;
+            }
+            .navbar-default .navbar-toggle 
+            {
+                border-color: transparent;
+                color: #fff !important;
+                
+            }
+            .bg-image 
+            {
+                background-image: url('sri-lanka-exports.jpg');
+                background-size: cover;
+                background-position: center;
+                height: 100vh; /* Full screen height */
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-top: 150px;
+            }
+            .grid-item 
+            {
+                position: relative;
+                height: 300px; /* Adjust height */
+                background-size: cover;
+                background-position: center;
+                color: white;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                font-weight: bold;
+            }
+            .export-text {
+            font-size: 25px;
+            font-weight: 700;
+            color: #444;
+            text-align: center;
+            max-width: 900px;
+            margin: 50px auto;
+            line-height: 1.8;
+            }
+            .pepper-section {
+            margin: 50px auto;
+            max-width: 1100px;
+            }
+            .pepper-img {
+                width: 580px;
+                height: 361.86px;
+                             
+                
+            }
+            .pepper-text {
+                color: #666;
+                font-size: 17.5px;
+                line-height: 1.8;
+                padding-left: 150px;
+            }
+            .pepper-title {
+                font-weight: 700;
+                color: #222;
+                padding-left: 150px;
+            }
+
+            .pepper-section1 {
+            margin: 50px auto;
+            max-width: 1100px;
+            }
+            .pepper-img1 {
+                width: 580px;
+                height: 361.86px;
+                             
+                
+            }
+            .pepper-text1 {
+                color: #666;
+                font-size: 17.5px;
+                line-height: 1.8;
+                padding-left: 150px;
+            }
+            .pepper-title1 {
+                font-weight: 700;
+                color: #222;
+                padding-left: 150px;
+            }
+
+            .pepper-section2 {
+            margin: 50px auto;
+            max-width: 1100px;
+            }
+            .pepper-img2 {
+                width: 580px;
+                height: 361.86px;
+                             
+                
+            }
+            .pepper-text2 {
+                color: #666;
+                font-size: 17.5px;
+                line-height: 1.8;
+                padding-left: 150px;
+            }
+            .pepper-title2 {
+                font-weight: 700;
+                color: #222;
+                padding-left: 150px;
+            }
+
+            .pepper-section3 {
+            margin: 50px auto;
+            max-width: 1100px;
+            }
+            .pepper-img3 {
+                width: 580px;
+                height: 361.86px;
+                             
+                
+            }
+            .pepper-text3 {
+                color: #666;
+                font-size: 17.5px;
+                line-height: 1.8;
+                padding-left: 150px;
+            }
+            .pepper-title3 {
+                font-weight: 700;
+                color: #222;
+                padding-left: 150px;
+            }
+
+            .pepper-section4 {
+            margin: 50px auto;
+            max-width: 1100px;
+            }
+            .pepper-img4 {
+                width: 580px;
+                height: 361.86px;
+                             
+                
+            }
+            .pepper-text4 {
+                color: #666;
+                font-size: 17.5px;
+                line-height: 1.8;
+                padding-left: 150px;
+            }
+            .pepper-title4 {
+                font-weight: 700;
+                color: #222;
+                padding-left: 150px;
+            }
+
+            .pepper-section5 {
+            margin: 50px auto;
+            max-width: 1100px;
+            }
+            .pepper-img5 {
+                width: 580px;
+                height: 361.86px;
+                             
+                
+            }
+            .pepper-text5 {
+                color: #666;
+                font-size: 17.5px;
+                line-height: 1.8;
+                padding-left: 150px;
+            }
+            .pepper-title5 {
+                font-weight: 700;
+                color: #222;
+                padding-left: 150px;
+            }
+            .footer {
+                background-color: #2a2a2a;
+                color: white;
+                padding: 40px 0;
+           
+            }
+            .footer h5 {
+                font-weight: bold;
+                text-transform: uppercase;
+                font-size: 14px;
+                margin-bottom: 15px;
+            }
+            .footer p, .footer a {
+                color: rgba(255, 255, 255, 0.8);
+                font-size: 14px;
+                text-decoration: none;
+            }
+            .footer a:hover {
+                color: white;
+                text-decoration: underline;
+            }
+                    @keyframes slide {
+                0% {
+                opacity: 0;
+                transform: translateY(70%);
+                } 
+                100% {
+                opacity: 1;
+                transform: translateY(0%);
+                }
+            }
+            @-webkit-keyframes slide {
+                0% {
+                opacity: 0;
+                -webkit-transform: translateY(70%);
+                } 
+                100% {
+                opacity: 1;
+                -webkit-transform: translateY(0%);
+                }
+            }
+            @media screen and (max-width: 768px) {
+                .col-sm-4 {
+                text-align: center;
+                margin: 25px 0;
+                }
+                .btn-lg {
+                width: 100%;
+                margin-bottom: 35px;
+                }
+            }
+            @media screen and (max-width: 480px) {
+                .logo {
+                font-size: 150px;
+                }
+            }
+            .hero-section {
+                background: url('background.jpg') no-repeat center center/cover;
+                height: 120px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                position: relative;
+                overflow: hidden;
+            }
+
+            .hero-section::before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                z-index: 1;
+            }
+
+            .hero-text {
+                position: relative;
+                z-index: 2;
+                color: white;
+                font-weight: bold;
+                text-transform: uppercase;
+                transition: transform 0.5s ease-in-out, letter-spacing 0.5s ease-in-out;
+                font-size: 50px
+            }
+
+            /* Hover effect */
+            .hero-text:hover {
+                transform: scale(1.1);
+                width: 1000px;
+            }
+        </style>
+    <body id="myPage" data-target=".navbar" data-offset="60">
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>                        
+                    </button>
+                    <a href="home.html">
+                        <img src="IMG_8622.PNG" alt="" style="height: 100px;width: 120px;">
+                    </a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="home.html" style="padding-top: 40px;">HOME</a></li>
+                        <li><a href="about.html" style="padding-top: 40px;">ABOUT</a></li>
+                        <li><a href="#portfolio" style="padding-top: 40px;">EXPORTS</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        
+        <div class="bg-image mt-5" >
+            <div class="hero-section">
+                <b class="hero-text">Exports</b>
+            </div>
+        </div>
+
+        <div class="container">
+            <p class="export-text">
+                Very recently Midcity has started seeking export opportunities and are now successfully exporting 
+                black pepper, tamarind, lentil husk and king coconuts. We ensure to try as much as possible to 
+                source our produce from farmer support programs across Sri Lanka so that we help build our people 
+                and our agricultural industry.
+            </p>
+        </div>
+
+        <div class="container-fluid">
+            <div class="row  pepper-section">
+                <div class="col-md-5">
+                    <img src="mango-exporters-sri-lanka.jpg" alt="Pepper" class="pepper-img">
+                </div>
+                <div class="col-md-7">
+                    <h2 class="pepper-title">Mango</h2>
+                    <p class="pepper-text">
+                        Although mangoes are not native to Sri Lanka it’s a popular fruit among the locals. It’s sweet, juicy rich taste makes it hard to resist any day. There are several types of mangoes in Sri Lanka that have not only a sweet taste but also a sour taste. The sweet varieties are generally eaten alone or made into a thick concoction whilst the sour variety is generally made into a mango accharu (a pickle recipe) or curry. Either way this golden fruit has a high concentration of essential nutrients such as vitamin A and C.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid">
+            <div class="row  pepper-section1">
+                <div class="col-md-5">
+                    <img src="king-coconut-exporter-sri-lanka.jpg" alt="Pepper" class="pepper-img1">
+                </div>
+                <div class="col-md-7">
+                    <h2 class="pepper-title1">Mango</h2>
+                    <p class="pepper-text1">
+                        King coconuts are native to Sri Lanka so it’s quite hard not to spot a King Coconut Kiosk. This oval shaped orange fruit is a variant of the coconut family and is referred to by the locals as Thembili. It’s sweet flavour and anti-inflammatory properties are perfect to beat the tropical heat and expel the heat from the body leaving you refreshed and rejuvenated. It’s also used by local ayurvedic practitioners in some of their medicinal concoctions.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid">
+            <div class="row  pepper-section2">
+                <div class="col-md-5">
+                    <img src="IMG_3184.PNG" alt="Pepper" class="pepper-img2">
+                </div>
+                <div class="col-md-7">
+                    <h2 class="pepper-title2">Fresh onion</h2>
+                    <p class="pepper-text2">
+                        India is the second-largest onion-growing country and Indian
+                        RATE
+                        onions are famous for their pungency and are available round the year.
+                        Varieties: Dark Red, Agrifound Light Red, NHRDF Red, Agrifound White,
+                        1
+                        Agrifound Rose and Agrifound Red, Pusa Ratnar, Pusa Red, and Pusa
+                        White Round
+                        size: Every size available.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid">
+            <div class="row  pepper-section3">
+                <div class="col-md-5">
+                    <img src="IMG_3188.JPG" alt="Pepper" class="pepper-img3">
+                </div>
+                <div class="col-md-7">
+                    <h2 class="pepper-title3">Peanuts</h2>
+                    <p class="pepper-text3">
+                        india is one of the highest producer of peanuts in the world.
+                        2
+                        Peanuts are widely cultivated for their edible seeds, which are a rich
+                        source of protein, oil, and other essential nutrients.
+                        varieties: Bold, java, grade I, grade II and grade III
+                        Ask for rate
+                        size: 38/42, 40/45, 45/55 in bold, 40/50, 50/60 and 55/65 in java,
+                        15.81mm to 18.05mm in grade I, 12.44mm to 15.78mm in grade II....
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid">
+            <div class="row  pepper-section4">
+                <div class="col-md-5">
+                    <img src="IMG_3187.JPG" alt="Pepper" class="pepper-img4">
+                </div>
+                <div class="col-md-7">
+                    <h2 class="pepper-title4">Banana</h2>
+                    <p class="pepper-text4">
+                        we have export quality with large quamtity.
+                        variety: Primarily Cavendish bananas
+                        Size: Medium size, around 7-8 inches long
+                        3
+                        Packaging: we provide Proper packaging to prevent damage during
+                        Ask for rate
+                        transport.
+                        <br>
+                        <strong style="color: black;">Note:</strong> also we can provide packaging according to buyer's desire.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid">
+            <div class="row  pepper-section5">
+                <div class="col-md-5">
+                    <img src="IMG_3185.JPG" alt="Pepper" class="pepper-img5">
+                </div>
+                <div class="col-md-7">
+                    <h2 class="pepper-title5">Green chilli </h2>
+                    <p class="pepper-text5">
+                        reguler green and organic chilli are available
+                        Quality and grade : G1,G2,G3,G4 all quality are available.
+                        Packaging : 3.8 kg net weight and 4.5 kg gross weight 
+                        <br>
+                        <strong style="color: black;">Note:</strong> If the buyer needs to make changes to the packaging, they can do so.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <!-- Contact Section -->
+                    <div class="col-md-6">
+                        <h5 style="color: rgba(255, 255, 255, 0.6);font-size: 12px;">Contact Us</h5>
+                        <br>
+                        <p style="color: rgba(255, 255, 255, 0.6);font-size: 12px;"><strong>RAJ ENTERPRISE</strong></p>
+                        <p style="color: rgb(255, 255, 255);font-size: 16px;">plot no. 2, M D campus, punagam saroli road, opp. Kohinoor -2 textile market , surat, gujarat.</p>
+                        <br>
+                        <p style="color: rgba(255, 255, 255, 0.6);font-size: 14px;"><strong>Telephone:</strong> </p>
+                        <p> +91 9875244369</p>
+                        <p> +91 6352932539</p>
+                        <br>
+                        <p style="color: rgba(255, 255, 255, 0.6);font-size: 14px;"><strong>Email:</strong></p>
+                        <p><a href="mailto:info@midcity.lk">rajenterprise9712@gmail.com</a></p>
+                    </div>
+    
+                    <!-- Quick Links Section -->
+                    <div class="col-md-6">
+                        <h5 style="margin-left: 100px;">Quick Links</h5>
+                        <p style="margin-left: 100px;"><a href="home.html">Home</a></p>
+                        <p style="margin-left: 100px;"><a href="about.html">About Us</a></p>
+                        <p style="margin-left: 100px;"><a href="">Exports</a></p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

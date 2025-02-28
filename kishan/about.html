@@ -1,0 +1,280 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    </head>
+    <style>
+        .navbar 
+        {
+            margin-bottom: 0;
+            background-color: rgb(180, 178, 178);
+            z-index: 9999;
+            border: 0;
+            font-size: 12px !important;
+            line-height: 1.42857143 !important;
+            letter-spacing: 4px;
+            border-radius: 0;
+            font-family: Montserrat, sans-serif;
+        }
+        .navbar li a, .navbar  
+        {
+            color: #fff !important;
+        }
+        .navbar-nav li a:hover, .navbar-nav li.active a 
+        {
+            color: black !important;
+            background-color: #fff !important;
+            height: 100px;
+        }
+        .navbar-default .navbar-toggle 
+        {
+            border-color: transparent;
+            color: #fff !important;    
+        }
+        .bg-image 
+        {
+            background-image: url('Thailand_mango.webp');
+            background-size: cover;
+            background-position: center;
+            height: 100vh; /* Full screen height */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 150px;
+        }
+        .grid-item 
+        {
+            position: relative;
+            height: 300px; /* Adjust height */
+            background-size: cover;
+            background-position: center;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            font-weight: bold;
+        }
+        .sidebar
+        {
+            padding: 40px;
+            height: 100vh; /* Full-height sidebar */
+            margin-top: 40px;
+        }
+        .sidebar h5
+        {
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        .sidebar a 
+        {
+            display: block;
+            color: black;
+            text-decoration: none;
+            font-size: 16px;
+            margin-bottom: 10px;
+            transition: 0.3s;
+        }
+        .sidebar a:hover 
+        {
+            text-decoration: underline;
+        }
+        .content 
+        {
+            padding: 40px;
+            margin-top: 40px;            
+        }
+        .content h2 
+        {
+            background-color: #1f2a67;
+            color: white;               
+            padding: 10px 20px;
+            display: inline-block;
+            font-weight: bold;
+        }
+        .content p 
+        {
+            font-family: helvetica;
+            font-size: 18px;
+            color: rgb(123, 123, 123);
+            line-height: 1.8;
+        }
+        .footer 
+        {
+            background-color: #2a2a2a;
+            color: white;
+            padding: 40px 0;
+        }
+        .footer h5 
+        {
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 14px;
+            margin-bottom: 15px;
+        }
+        .footer p, .footer a 
+        {
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 14px;
+            text-decoration: none;
+        }
+        .footer a:hover 
+        {
+            color: white;
+            text-decoration: underline;
+        }
+        @keyframes slide 
+        {
+            0% {
+            opacity: 0;
+            transform: translateY(70%);
+            } 
+            100% {
+            opacity: 1;
+            transform: translateY(0%);
+            }
+        }
+        @-webkit-keyframes slide {
+            0% {
+            opacity: 0;
+            -webkit-transform: translateY(70%);
+            } 
+            100% {
+            opacity: 1;
+            -webkit-transform: translateY(0%);
+            }
+        }
+        @media screen and (max-width: 768px) {
+            .col-sm-4 {
+            text-align: center;
+            margin: 25px 0;
+            }
+            .btn-lg {
+            width: 100%;
+            margin-bottom: 35px;
+            }
+        }
+        @media screen and (max-width: 480px) {
+            .logo {
+            font-size: 150px;
+            }
+        }
+        .hero-section {
+                background: url('background.jpg') no-repeat center center/cover;
+                height: 120px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                position: relative;
+                overflow: hidden;
+            }
+
+            .hero-section::before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                z-index: 1;
+            }
+
+            .hero-text {
+                position: relative;
+                z-index: 2;
+                color: white;
+                font-weight: bold;
+                text-transform: uppercase;
+                transition: transform 0.5s ease-in-out, letter-spacing 0.5s ease-in-out;
+                font-size: 50px
+            }
+
+            /* Hover effect */
+            .hero-text:hover {
+                transform: scale(1.1);
+                width: 1000px;
+            }
+    </style>
+    <body id="myPage" data-target=".navbar" data-offset="60">
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>                        
+                    </button>
+                    <a href="home.html">
+                        <img src="IMG_8622.PNG" alt="" style="height: 100px;width: 120px;">
+                    </a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="home.html" style="padding-top: 40px;">HOME</a></li>
+                        <li><a href="#services" style="padding-top: 40px;">ABOUT</a></li>
+                        <li><a href="exports.html" style="padding-top: 40px;">EXPORTS</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav> 
+
+        <div class="bg-image mt-5" >
+            <div class="hero-section">
+                <b class="hero-text">About us</b>
+            </div>
+        </div>
+
+
+        <div class="container-fluid ">
+            <div class="row">
+                <!-- Sidebar -->
+                <div class="col-md-3 sidebar">
+                    <h5>Quick Links</h5>
+                    <a href="home.html">Home</a>
+                    <a href="#">About us</a>
+                    <a href="exports.html">Exports</a>
+                </div>
+    
+                <!-- Main Content -->
+                <div class="col-md-9 content">
+                    <h2>About Raj Enterprise</h2>
+                    <p >Welcome to RAJ ENTERPRISE a trusted leader in global trade and export services. We specialize in delivering top-quality products to markets worldwide, ensuring efficient and reliable supply chains for businesses across various industries.</p><br> 
+                    <p >Our commitment to excellence, customer satisfaction, and timely delivery has made us a preferred exporter for companies looking for premium products at competitive prices.</p><br>
+                    <p >With years of experience in international ,tailored to meet the unique needs of our diverse clientele. Our dedicated team works closely with suppliers, manufacturers, and logistics partners to ensure that every order is processed smoothly, safely, and promptly.</p><br>
+                    <p >At RAJ ENTERPRISE , we are passionate about fostering long-term business relationships and creating value for our customers. Whether you're a small business or a large corporation, we’re here to help you grow through our seamless.</p>
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <!-- Contact Section -->
+                    <div class="col-md-6">
+                        <h5 style="color: rgba(255, 255, 255, 0.6);font-size: 12px;">Contact Us</h5>
+                        <br>
+                        <p style="color: rgba(255, 255, 255, 0.6);font-size: 12px;"><strong>RAJ ENTERPRISE</strong></p>
+                        <p style="color: rgb(255, 255, 255);font-size: 16px;">plot no. 2, M D campus, punagam saroli road, opp. Kohinoor -2 textile market , surat, gujarat.</p>
+                        <br>
+                        <p style="color: rgba(255, 255, 255, 0.6);font-size: 14px;"><strong>Telephone:</strong> </p>
+                        <p> +91 9875244369</p>
+                        <p> +91 6352932539</p>
+                        <br>
+                        <p style="color: rgba(255, 255, 255, 0.6);font-size: 14px;"><strong>Email:</strong></p>
+                        <p><a href="mailto:info@midcity.lk">rajenterprise9712@gmail.com</a></p>
+                    </div>
+    
+                    <!-- Quick Links Section -->
+                    <div class="col-md-6">
+                        <h5 style="margin-left: 100px;">Quick Links</h5>
+                        <p style="margin-left: 100px;"><a href="home.html">Home</a></p>
+                        <p style="margin-left: 100px;"> <a href="#">About Us</a></p>
+                        <p style="margin-left: 100px;"><a href="exports.html">Exports</a></p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
